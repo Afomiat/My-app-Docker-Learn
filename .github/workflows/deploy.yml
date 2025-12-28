@@ -32,6 +32,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
+          # If your Dockerfile is in the root, use '.' 
+          # If it is inside a folder named form-app, keep 'form-app'
           context: form-app
           push: true
           tags: |
