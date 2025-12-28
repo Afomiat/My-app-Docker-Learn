@@ -1,6 +1,8 @@
 name: CD - Build and Push
 
 on:
+  push:
+    branches: [ "main" ]
   workflow_run:
     workflows: ["CI - Test Suite"]
     types:
