@@ -35,5 +35,5 @@ jobs:
           context: form-app
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/afomiat/my-app-docker-learn:latest
+            ghcr.io/afomiat/my-app-docker-learn:${{ github.sha }}
